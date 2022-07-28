@@ -12,7 +12,7 @@ type (
 	}
 
 	ListCustomer struct {
-		Data []ListCustomer `json:"data"`
+		Data []Customer `json:"data"`
 	}
 
 	CustomerById struct {

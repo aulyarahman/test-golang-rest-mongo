@@ -7,9 +7,8 @@ import (
 	"net/http"
 )
 
-func RouterCustomer(e *echo.Echo) {
-	var useCase app.CustomerUseCaseI
-	customerCtrl := controller.NewCustomerController(e, useCase)
+func RouterCustomer(e *echo.Echo, cusUseCase app.CustomerUseCaseI) {
+	customerCtrl := controller.NewCustomerController(e, cusUseCase)
 
 	r := e.Group("/api/v1/customer")
 	r.GET("/", customerCtrl.Get)
