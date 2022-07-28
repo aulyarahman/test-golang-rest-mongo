@@ -1,0 +1,19 @@
+{
+  "name": "twitcat-service",
+  "env": "local",
+  "host": {
+    "address": "0.0.0.0",
+    "port": 9595
+  },
+  "database": {
+    "mongodb": {
+      "timeout": 5000,
+      "host": "0.0.0.0",
+      "port": "27017",
+      "dbname": "twitcat-db",
+      "user": "",
+      "password": ""
+    }
+  },
+
+}
